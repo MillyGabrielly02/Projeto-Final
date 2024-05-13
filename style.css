@@ -72,7 +72,7 @@ nav li a:hover {
 /* Estilos da seção "Home" */
 .Home {
     height: 100vh;
-    background: url('imagens/img_home.jpg');
+    background: url('imagens/img_home');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -86,6 +86,9 @@ nav li a:hover {
     color: #fff;
     font-size: 60px;
     font-weight: 600;
+}
+.saiba-mais a {
+    color: white;
 }
 
 .texto .sub_titulo {
@@ -379,6 +382,7 @@ nav li a:hover {
     width: 28px;
     margin-left: 20px;
     display: none;
+    color: #4F87B8;
   }
   
   .navbar {
@@ -418,7 +422,7 @@ nav li a:hover {
   
   a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #4F87B8(0, 0, 0);
   }
   
   .header {
@@ -437,6 +441,7 @@ nav li a:hover {
     width: 28px;
     margin-left: 20px;
     display: none;
+    color: #4F87B8;
   }
   
   .contact {
@@ -446,7 +451,7 @@ nav li a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: radial-gradient(#fff, rgb(161, 161, 161));
+    background: radial-gradient(#4F87B8, rgb(161, 161, 161));
   }
   
   .contact .content {
@@ -504,14 +509,14 @@ nav li a:hover {
     display: flex;
     margin-left: 20px;
     font-size: 16px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     flex-direction: column;
     font-weight: 300;
   }
   
   .container2 .contactInfo .box .text h3{
     font-weight: 500;
-    color: #0104d4;
+    color: #ffffff;
   }
   
   .contactForm {
@@ -522,7 +527,7 @@ nav li a:hover {
   
   .contactForm h2{
     font-size: 30px;
-    color: #333;
+    color: #4F87B8;
     font-weight: 500;
   }
   
@@ -574,7 +579,7 @@ nav li a:hover {
   }
   
   .contactForm .inputBox input:hover[type="submit"] {
-    background: rgb(0, 0, 0);
+    background: #4F87B8(0, 0, 0);
   }
   
   .container {
@@ -590,3 +595,138 @@ nav li a:hover {
     flex-wrap: wrap;
     justify-content: space-around;
   }
+
+  
+  .feedback {
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: radial-gradient(#4F87B8, rgb(161, 161, 161));
+}
+
+.feedback .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.feedback .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.feedback .content p{
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+}
+
+.container2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container2 .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container2 .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container2 .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container2 .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container2 .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.feedback .contactForm {
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+
+.feedback .contactForm h2{
+    font-size: 30px;
+    color: #4F87B8;
+    font-weight: 500;
+}
+
+.feedback .contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.feedback .contactForm .inputBox input,
+.feedback .contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.feedback .contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.feedback .contactForm .inputBox input:focus ~ span, 
+.feedback .contactForm .inputBox input:valid ~ span, 
+.feedback .contactForm .inputBox textarea:focus ~ span, 
+.feedback .contactForm .inputBox textarea:valid ~ span {
+    color: #4F87B8;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.feedback .contactForm .inputBox input[type="submit"] {
+    width: 100px;
+    background: radial-gradient(rgb(194, 194, 194), rgb(0, 0, 0));
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.feedback .contactForm .inputBox input:hover[type="submit"] {
+    background: #4F87B8(0, 0, 0);
+}
