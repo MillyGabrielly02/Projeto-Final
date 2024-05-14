@@ -72,7 +72,7 @@ nav li a:hover {
 /* Estilos da seção "Home" */
 .Home {
     height: 100vh;
-    background: url('imagens/img_home');
+    background: url('imagens/img_home.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
